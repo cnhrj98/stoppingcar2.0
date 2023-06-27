@@ -1,0 +1,17 @@
+*.class
+*.idea
+*.log
+*.gz
+*.lst
+*.factories
+*.json
+*.MF
+*.jar
+*.original
+*.tmp
+*.iml
+*.properties
+/target/
+# Project exclude paths
+/base/target/
+/gateway/target/

@@ -1,0 +1,26 @@
+server:
+  port: 8002
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/stoppingcar?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 2000
+    lettuce:
+      shutdown-timeout: 2000
+    password: 123456
+    database: 0
+    ssl: false
+
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
